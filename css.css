@@ -31,7 +31,7 @@ header{
     float: left;
     width: 160px;
     height: 60px;
-    background-image: url(../images/logo1.png);
+    background-image: url(logo1.png);
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ header{
     float: right;
     width: 160px;
     height: 60px;
-    background-image: url(../images/logo2.png);
+    background-image: url(logo2.png);
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ section.cover-form{
 
 .bg{
     height: 700px;
-    background-image: url(../images/bg-form.jpg);
+    background-image: url(bg-form.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
