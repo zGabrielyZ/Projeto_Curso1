@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+html,body{
+    height: 100%;
+}
+
+/*Divs Gerais*/
+.container{
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+   background-color: rgb(180, 180, 180); 
+   padding: 40px 2% ;
+}
+
+.logo1{
+    float: left;
+    width: 160px;
+    height: 60px;
+    background-image: url(../images/logo1.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: purple; */
+}
+.logo2{
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-image: url(../images/logo2.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: orange; */
+}
+
+section.cover-form{
+    width: 100%;
+    
+}
+
+.bg{
+    height: 700px;
+    background-image: url(../images/bg-form.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-container{
+   
+    position: absolute;
+    right:  30px;
+    top: -5%;
+    width: 400px;
+    margin-right: 40px;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.8);
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
+    
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 25px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgba(210,210,210,0.9);
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 15px;
+}
+.form-container form p{
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    background-origin: 1px solid black;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-wrapper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top:20px ;
+}
+
+
+.form-container form input[type=submit]{
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+section.chamada{
+   
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    
+    z-index: 1;
+}
+
+section.chamada h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+section.chamada div.container{
+    background-color:#033c50;
+    padding: 70px 0 50px 0;
+}
+
+section.chamada p{
+    
+    display: inline-block;
+    width: 98%;
+    max-width: 600px;
+    font-size: 20px;
+    color: white;
+}
+
+section.chamada div.wrapper{
+    padding-top: 20px;
+}
+
+.flex-mosaico{
+    display: flex;
+    background-color:#144c52;
+}
+.flex-mosaico:not(:first-child){
+    padding: 8px 0;
+}
+.flex-mosaico:nth-child(2){
+    padding-top: 16px;
+}
+
+.item1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+
+}
+.item2-mosaico{
+    padding: 100px;
+    width: 40%;
+
+}
+.item2-mosaico p{
+    color: white;
+
+}
+
+footer{
+    text-align: center;
+    margin-top:4px;
+}
+
+
+@media screen and (max-width:510px){
+    
+    header{
+        text-align: center;
+    }
+    
+    
+    .logo1,.logo2{
+        margin-top:10px;
+        display: inline-block;
+        float: none;
+
+    }
+
+    .form-container{
+        height: auto;
+        width: 96%;
+        transform: translate(20px);
+        
+    }
+    
+
+    
+    
+}
+
+@media screen and (max-width:960px) {
+    .bg{
+        height: auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .form-container{
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width:960px) {
+
+    .flex-mosaico{
+        
+        display: block;
+    }
+    .item1-mosaico,.item2-mosaico{
+        width: 100%;
+    }
+    .item2-mosaico{
+        text-align: justify;
+    }
+    .item1-mosaico{
+        padding-top: 70%;
+        height: 400px;
+    }
+}
